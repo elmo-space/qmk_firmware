@@ -45,7 +45,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* RGB */
 #define RGB_DI_PIN B8
 #define RGBLED_NUM 16
-#define WS2812_SPI SPID2
 #define RGBLIGHT_SLEEP
 #define WS2812_BYTE_ORDER WS2812_BYTE_ORDER_RGB
 #define RGBLIGHT_ANIMATIONS
