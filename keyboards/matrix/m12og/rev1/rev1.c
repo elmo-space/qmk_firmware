@@ -17,11 +17,12 @@
 #include "rev1.h"
 
 void board_init(void) {
+    setPinOutput(A8);
     writePinLow(A8);
 }
 
 void keyboard_post_init_kb(void) {
-    rgblight_enable_noeeprom();
-    rgblight_sethsv_noeeprom(5, 255, 255);
-    rgblight_mode_noeeprom(37);
+    //rgblight_enable_noeeprom();
+    //rgblight_sethsv_noeeprom(5, 255, 255);
+    //rgblight_mode_noeeprom(37);
 }

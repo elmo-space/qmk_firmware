@@ -34,17 +34,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   )
 };
 
-bool led_update_user(led_t led_state) {
-    static uint8_t caps_state = 0;
-    if (caps_state != led_state.caps_lock) {
-        if (led_state.caps_lock) {
-            rgblight_sethsv_noeeprom_cyan();
-            rgblight_mode_noeeprom(1);
-        } else {
-            rgblight_sethsv_noeeprom(5, 255, 255);
-            rgblight_mode_noeeprom(37);
-        }
-        caps_state = led_state.caps_lock;
-    }
-    return true;
-};
+//bool led_update_user(led_t led_state) {
+//    static uint8_t caps_state = 0;
+//    if (caps_state != led_state.caps_lock) {
+//        if (led_state.caps_lock) {
+//            rgblight_sethsv_noeeprom_cyan();
+//            rgblight_mode_noeeprom(1);
+//        } else {
+//            rgblight_sethsv_noeeprom(5, 255, 255);
+//            rgblight_mode_noeeprom(37);
+//        }
+//        caps_state = led_state.caps_lock;
+//    }
+//    return true;
+//};
